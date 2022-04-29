@@ -22,6 +22,7 @@ let resultText = document.createElement("p");
 let mainResult = document.createElement("p");
 let playerNumberResult = document.createElement("span");
 let computerNumberResult = document.createElement("span");
+let finishText = document.createElement("p");
 
 let playerFlag = 0;
 let computerFlag = 0;
@@ -76,9 +77,12 @@ scissors.addEventListener('click', function(){
     mainResult.textContent = something;
     check(something);
 })
+finishText.textContent = "RESULT:"
+finishText.style.marginTop = "50px";
 
 result.appendChild(resultText);
 result.appendChild(mainResult);
+result.appendChild(finishText);
 
 playerNumberResult.style.margin = "100px"
 
